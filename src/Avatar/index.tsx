@@ -13,3 +13,5 @@ export function Avatar(props: ComponentProps) {
 
   return <AvatarPrimitive $isNormal={isNormal}>{children}</AvatarPrimitive>;
 }
+
+Avatar.displayName = 'Avatar';
