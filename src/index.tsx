@@ -11,7 +11,6 @@ export * from './Input/InputGroupRight';
 export * from './Input/InputWithLabel';
 export * from './Avatar';
 export * from './Avatar/AvatarImage';
-export * from './Alert';
 
 // Layout
 export * from './Container';
