@@ -1,11 +1,9 @@
-"use client";
+import React, { ReactNode } from 'react';
 
-import React, { ReactNode } from "react";
+import { Color, Variant, Size } from './types';
 
-import { Color, Variant, Size } from "./types";
-
-import { theme } from "../theme";
-import { BaseButton } from "./style";
+import { theme } from '../theme';
+import { BaseButton } from './style';
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
@@ -26,9 +24,9 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 export function Button(props: ButtonProps): JSX.Element {
   const {
     children,
-    color = "primary",
-    variant = "filled",
-    size = "normal",
+    color = 'primary',
+    variant = 'filled',
+    size = 'normal',
     loading = false,
     disabled = false,
     tabIndex = 0,
@@ -39,24 +37,24 @@ export function Button(props: ButtonProps): JSX.Element {
     onMouseUp,
   } = props;
 
-  let backgroundColor: string = "transparent";
+  let backgroundColor: string = 'transparent';
   let textColor: string = theme.colors.text;
 
   switch (variant) {
-    case "filled":
+    case 'filled':
       backgroundColor = theme.colors[color];
       textColor = theme.colors.black;
       break;
-    case "bezeled":
+    case 'bezeled':
       backgroundColor = theme.colors[`${color}15`];
       textColor = theme.colors[color];
       break;
-    case "bezeledGray":
+    case 'bezeledGray':
       backgroundColor = theme.colors.gray15;
       textColor = theme.colors[color];
       break;
-    case "borderless":
-      backgroundColor = "transparent";
+    case 'borderless':
+      backgroundColor = 'transparent';
       textColor = theme.colors[color];
       break;
   }
@@ -70,7 +68,7 @@ export function Button(props: ButtonProps): JSX.Element {
       onMouseUp={onMouseUp}
       tabIndex={tabIndex}
       disabled={disabled || loading}
-      $isSmall={size === "small"}
+      $isSmall={size === 'small'}
       $background={backgroundColor}
       $color={textColor}
     >
@@ -79,4 +77,4 @@ export function Button(props: ButtonProps): JSX.Element {
   );
 }
 
-Button.displayName = "Button";
+Button.displayName = 'Button';
