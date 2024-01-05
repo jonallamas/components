@@ -23,3 +23,6 @@ export * from './Icons';
 
 // Layout
 export * from './Container';
+
+// Provider
+export * from './provider';
