@@ -1,9 +1,10 @@
-// import { CheckIcon, AlertIcon } from '@bitcoin-design/bitcoin-icons-react/filled';
-// import { BtnLoader } from '@/components/Loader/Loader';
 import React from 'react';
+
+import { CheckIcon, AlertIcon } from '../Icons';
 
 import { InputProps } from './types';
 
+import { theme } from '../theme';
 import { InputPrimitive, InputBox, InputIcon } from './style';
 
 export function Input(props: InputProps) {
@@ -42,10 +43,9 @@ export function Input(props: InputProps) {
       />
       {(isLoading || isChecked || isError) && (
         <InputIcon>
-          Icon
-          {/* {isLoading && <BtnLoader />}
+          {/* {isLoading && <BtnLoader />} */}
           {isChecked && <CheckIcon color={theme.colors.success} />}
-          {isError && <AlertIcon color={theme.colors.error} />} */}
+          {isError && <AlertIcon color={theme.colors.error} />}
         </InputIcon>
       )}
     </InputBox>
