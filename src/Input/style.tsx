@@ -129,7 +129,7 @@ export const InputIcon = styled.div`
   }
 `;
 
-export const Textarea = styled.textarea<InputPrimitiveProps>`
+export const TextareaPrimitive = styled.textarea<InputPrimitiveProps>`
   width: 100%;
 
   padding: 8px;

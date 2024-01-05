@@ -32,3 +32,13 @@ export interface FeedbackPrimitiveProps {
   $isShow: boolean;
   $isSuccess: boolean;
 }
+
+export interface TextareaProps {
+  placeholder: string;
+  status?: 'success' | 'error';
+  onChange?: (e: any) => void;
+  id?: string;
+  name?: string;
+  value?: string;
+  disabled?: boolean;
+}
