@@ -1,25 +1,25 @@
 import React, { ReactNode, createContext } from 'react';
-import { ThemeProvider as Theme, StyleSheetManager } from 'styled-components';
+import { ThemeProvider, StyleSheetManager } from 'styled-components';
 
 import { theme } from './theme';
 import { GlobalStyle } from './style';
 
-interface ThemeProviderProps {
+interface ProviderProps {
   children: ReactNode;
   sheet: any;
 }
 
-export const ThemeProviderContext = createContext({});
+// export const ProviderContext = createContext({});
 
-export function ThemeProvider(props: ThemeProviderProps) {
+export function Provider(props: ProviderProps) {
   const { children, sheet } = props;
 
   return (
-    <ThemeProviderContext.Provider value={{ theme: 'dark' }}>
+    <>
       <StyleSheetManager sheet={sheet}>
         <GlobalStyle />
-        <Theme theme={theme}>{children}</Theme>
+        <ThemeProvider theme={theme}>{children}</ThemeProvider>
       </StyleSheetManager>
-    </ThemeProviderContext.Provider>
+    </>
   );
 }
