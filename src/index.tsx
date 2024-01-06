@@ -25,4 +25,4 @@ export * from './Icons';
 export * from './Container';
 
 // Provider
-export * from './provider';
+export * from './Provider';
