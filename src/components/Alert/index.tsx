@@ -6,7 +6,7 @@ import { AlertIcon, CheckIcon } from '../Icons';
 
 import { AlertProps } from './types';
 
-import { theme } from '../theme';
+import { theme } from '../../theme';
 import { AlertPrimitive } from './style';
 
 export function Alert(props: AlertProps) {

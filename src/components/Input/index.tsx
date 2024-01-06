@@ -4,7 +4,7 @@ import { CheckIcon, AlertIcon } from '../Icons';
 
 import { InputProps } from './types';
 
-import { theme } from '../theme';
+import { theme } from '../../theme';
 import { InputPrimitive, InputBox, InputIcon } from './style';
 
 export function Input(props: InputProps) {

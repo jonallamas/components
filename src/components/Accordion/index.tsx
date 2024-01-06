@@ -4,7 +4,7 @@ import { AccordionTrigger } from './AccordionTrigger';
 
 import { AccordionProps } from './types';
 
-import { theme } from '../theme';
+import { theme } from '../../theme';
 import { AccordionPrimitive, AccordionContent } from './style';
 
 export function Accordion(props: AccordionProps) {

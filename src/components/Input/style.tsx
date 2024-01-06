@@ -2,7 +2,7 @@ import { styled } from 'styled-components';
 
 import { InputPrimitiveProps, FeedbackPrimitiveProps } from './types';
 
-import { theme } from '../theme';
+import { theme } from '../../theme';
 
 export const InputPrimitive = styled.input<InputPrimitiveProps>`
   flex: 1;

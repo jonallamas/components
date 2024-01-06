@@ -2,7 +2,7 @@ import React from 'react';
 
 import { LinkButtonProps } from './types';
 
-import { theme } from '../theme';
+import { theme } from '../../theme';
 import { LinkButtonPrimitive } from './style';
 
 export function LinkButton(props: LinkButtonProps) {

@@ -5,7 +5,7 @@ import { CaretRightIcon } from '../Icons';
 
 import { LinkSettingProps } from './types';
 
-import { theme } from '../theme';
+import { theme } from '../../theme';
 import { LinkSettingPrimitive } from './style';
 
 export function LinkSetting(props: LinkSettingProps) {
