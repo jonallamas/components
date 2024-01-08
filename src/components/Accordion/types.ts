@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
 export interface AccordionProps {
-  children: ReactNode;
+  children?: ReactNode;
   trigger: ReactNode;
   onOpen?: () => void;
   variant?: 'filled' | 'borderless';
