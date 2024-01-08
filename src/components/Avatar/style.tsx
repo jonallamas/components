@@ -20,6 +20,8 @@ export const AvatarPrimitive = styled.div<AvatarPrimitiveProps>`
   background-color: ${theme.colors.gray20};
   border: 1px solid ${theme.colors.gray30};
   border-radius: 50%;
+
+  font-size: 14px;
 `;
 
 export const AvatarImagePrimitive = styled.img`
