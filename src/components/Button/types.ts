@@ -1,4 +1,4 @@
-import { ReactNode, MouseEventHandler } from 'react';
+import { ReactNode, MouseEventHandler, CSSProperties } from 'react';
 
 type Color = 'primary' | 'secondary' | 'error';
 type Variant = 'filled' | 'bezeled' | 'bezeledGray' | 'borderless';
@@ -14,6 +14,7 @@ export interface ButtonProps {
   componentName?: string;
   tabIndex?: number;
   onClick(event: React.MouseEvent<HTMLElement>): void;
+  style?: CSSProperties;
 }
 
 export interface BaseButtonProps {
