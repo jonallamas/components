@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { Container } from '../Container';
+import { Container } from '../Layout/Container';
 import { Flex } from '../Flex';
 import { Button } from '../Button';
 import { Heading } from '../Heading';

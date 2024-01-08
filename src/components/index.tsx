@@ -15,6 +15,7 @@ export * from './Avatar';
 export * from './Avatar/AvatarImage';
 export * from './Alert';
 export * from './Accordion';
+export * from './Accordion/AccordionBody';
 export * from './Sheet';
 export * from './LinkButton';
 export * from './LinkSetting';
@@ -22,4 +23,5 @@ export * from './Icon';
 export * from './Icons';
 
 // Layout
-export * from './Container';
+export * from './Layout/Container';
+export * from './Layout/HeroCard';
