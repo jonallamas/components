@@ -17,7 +17,7 @@
     "test": "echo \"Error: no test specified\" && exit 0",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix --ext .js,.jsx,.ts,.tsx",
-    "build": "esbuild src/index.tsx --bundle --minify --platform=node --sourcemap --format=esm --packages=external --loader:.woff2=file --outdir=dist --metafile=dist/meta.json && tsc",
+    "build": "node esbuild.config.js && tsc",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
